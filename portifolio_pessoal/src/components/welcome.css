@@ -1,0 +1,14 @@
+.welcome_container{
+    display: flex;
+    justify-content: space-around;
+    background-color: #13131F;
+    padding: 10px;
+    height: 50vh;
+    color: white;
+}
+
+.container{
+    justify-content: center;
+    padding-top: 10vh;
+    padding-left: 5vw;
+}

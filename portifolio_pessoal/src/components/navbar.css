@@ -1,0 +1,26 @@
+.navbar_view{
+    background-color: black;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.fine_line{
+    background-color: rgb(165, 65, 252);
+    height: 0.5vh;
+}
+
+.burguer_menu{
+    color: rgb(165, 65, 252);
+    font-size: 50px;
+}
+
+.menu_title{
+    color: white;
+}
+
+.offcanvas{
+    background-color: black !important;
+}
