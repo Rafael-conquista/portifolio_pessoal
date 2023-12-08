@@ -14,9 +14,6 @@ function Navbar() {
         <div>
             <nav className="navbar navbar-light shadow navbar_view">
                 <div className="container-fluid">
-                    <Button variant="primary">
-                        muda de cor
-                    </Button>
                     <h1 className="menu_title">Portifólio</h1>
                     <TiThMenu className='burguer_menu' onClick={handleShow}/>
                 </div>

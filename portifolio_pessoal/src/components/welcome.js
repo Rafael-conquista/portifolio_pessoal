@@ -1,28 +1,35 @@
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import './welcome.css'
+import './welcome.css';
+import perfil from '../img/perfil.jpg';
 
 function Welcome() {
-    return(
+    return (
         <div className='welcome_container'>
-            <Container className='container'> 
+            <Container className='container'>
                 <Row>
                     <Col>
-                        <h1>
-                            Olá! meu nome é Rafael Conquista!
+                        <div className='imagem_div'>
+                            <img src={perfil} alt='vazio' className="tema_imagem" />   
+                        </div>
+                    </Col>
+                    <Col className='col-10'>
+                        <h1 className='name_title'>
+                            Olá! Meu nome é <span>Rafael Conquista!</span>
                         </h1>
+                        <p>Desenvolvedor Full Stack.</p>
                     </Col>
                 </Row>
                 <Row>
-                    <Col>
-                        <span>Desenvolvedor Full Stack</span>
-                    </Col>
-                </Row>
-                <Row>
-                    <Col>
-                        <button>Download CV</button>
-                        <button>Entrar em contato</button>
+                    <Col className='button_space'/>
+                    <Col className='welcome_buttons col-10'>
+                        <button class="botao">
+                            <span>Download CV</span> 
+                        </button>
+                        <button className='botao'>
+                            <span>Entrar em contato</span> 
+                        </button>
                     </Col>
                 </Row>
                 <Row>
