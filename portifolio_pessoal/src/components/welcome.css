@@ -26,6 +26,7 @@
     justify-content: start;
     padding-top: 3vh;
     gap: 1vw;
+    margin-left: -2vw;
 }
 
 .button{
@@ -92,3 +93,20 @@
     p{
         color: rgb(182, 182, 241);
     }
+
+.about{
+    padding-top: 5vh;
+}
+
+.text_about{
+    border-radius: 180px;
+    max-width:80vw;
+    max-height:80vh;
+    width: auto;
+    height: auto;
+}
+
+.fine_line{
+    background-color: rgb(165, 65, 252);
+    height: 0.1vh;
+}
