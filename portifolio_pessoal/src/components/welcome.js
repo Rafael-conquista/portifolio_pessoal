@@ -34,7 +34,7 @@ function Welcome() {
                 </Row>
                 <Row>
                     <h1 className='about'>
-                        Sobre mim
+                        Um pouco sobre mim:
                     </h1>
                 </Row>
                 <Row>

@@ -1,0 +1,84 @@
+.skills_body{
+    background-color: #13131F;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.skills_body h1{
+    color: white;
+    padding-top: 5vh;
+    text-align: center;
+    padding-bottom: 5vh;
+}
+
+.icon{
+    color: white;
+    font-size: 5em;
+    max-width: fit-content;
+}
+
+.skills_grid{
+    display: grid;
+    padding-left: 20px;
+    padding-right: 20px;
+    gap: 20px;
+    grid-template-columns: repeat(2, 2fr);
+    transition: 1s;
+    transform: translate(0%, 2%);
+    padding-left: 10vw;
+    padding-bottom: 15vh;
+}
+
+
+@media screen and (min-width:500px){
+    .skills_grid{
+      flex-direction: column;
+      grid-template-columns: repeat(2, 2fr);
+      padding-left: 10vw;
+    }
+  }
+
+@media screen and (min-width:600px){
+    .skills_grid{
+      flex-direction: column;
+      grid-template-columns: repeat(3, 2fr);
+      padding-left: 10vw;
+    }
+  }
+  
+  @media screen and (min-width:805px){
+    .skills_grid{
+      flex-direction: column;
+      grid-template-columns: repeat(4, 2fr);
+      padding-left: 10vw;
+    }
+  }
+
+.skills_grid span{
+    padding-left: 0.5vw;
+    padding-top: 1vh;
+}
+
+.icon_card{
+    border-radius: 50px;
+    background: black;
+    width: 150px;
+    display: flex;
+    flex-direction: column; /* Se desejar alinhar na vertical */
+    justify-content: center; /* Alinha verticalmente */
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.icon_card:hover{
+    transform: scale(1.2);
+    background-color: #00000039
+}
+
+.expand_button{
+    cursor: pointer;
+    transition: transform 0.8s ease-in-out;
+}
+.expand_button:hover{
+    transform: scale(1.5);
+}
