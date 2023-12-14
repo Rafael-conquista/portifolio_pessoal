@@ -1,10 +1,15 @@
 import Container from 'react-bootstrap/Container';
+import { EscritaAutomatica } from '../utils/EscritaAutomatica';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import './welcome.css';
 import perfil from '../img/perfil.jpg';
 
 function Welcome() {
+
+    const escrita = {tempo:120, text:"Olá! Meu nome é", delay: 0}
+    const escrita2 = {tempo:120, text:" Rafael Conquista!", delay: 1000}
+
     return (
         <div className='welcome_container'>
             <Container className='container'>
@@ -16,7 +21,14 @@ function Welcome() {
                     </Col>
                     <Col className='col-10'>
                         <h1 className='name_title'>
-                            Olá! Meu nome é <span>Rafael Conquista!</span>
+                            <EscritaAutomatica
+                                props={escrita}
+                            /><span>
+                                <EscritaAutomatica
+                                    props={escrita2}
+                                />
+                            </span>
+                            
                         </h1>
                         <p>Desenvolvedor Full Stack.</p>
                     </Col>

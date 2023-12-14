@@ -2,9 +2,10 @@
     background-color: black;
     padding-top: 5vh;
     padding-bottom: 5vh;
-    position: sticky;
     top: 0;
     z-index: 100;
+    width: 100%;
+    position: fixed !important;
 }
 
 .fine_line{
@@ -15,10 +16,12 @@
 .burguer_menu{
     color: rgb(165, 65, 252);
     font-size: 50px;
+    cursor: pointer;
 }
 
 .menu_title{
     color: white;
+    cursor: pointer;
 }
 
 .offcanvas{

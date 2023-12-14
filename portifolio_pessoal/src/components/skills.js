@@ -51,7 +51,7 @@ function Skills() {
                     </h1>
                     </div>
                     : 
-                    <div onClick={handleSkill} className='expand_button'>
+                    <div onClick={handleSkill} className='expand_button closed_button'>
                     <h1>
                         Habilidades ▼
                     </h1>

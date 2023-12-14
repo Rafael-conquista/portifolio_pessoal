@@ -5,7 +5,7 @@ import Skills from "./components/skills";
 function App() {
   return (
     <div className="body">
-      <Navbar/>
+      <Navbar className="teste"/>
       <Welcome/>
       <Skills/>
     </div>

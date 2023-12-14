@@ -82,3 +82,7 @@
 .expand_button:hover{
     transform: scale(1.5);
 }
+
+.closed_button{
+    margin-bottom: 5vh;
+}
