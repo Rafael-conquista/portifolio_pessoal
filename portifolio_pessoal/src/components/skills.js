@@ -20,6 +20,8 @@ import { SiMongodb } from "react-icons/si";
 import { GrDocker } from "react-icons/gr";
 import { SiKubernetes } from "react-icons/si";
 import { IoLogoGithub } from "react-icons/io5";
+import { MdKeyboardArrowDown } from "react-icons/md";
+import { MdKeyboardArrowUp } from "react-icons/md";
 import { useState } from 'react';
 
 
@@ -47,13 +49,13 @@ function Skills() {
                 {
                     showSkill ? <div onClick={handleSkill} className='expand_button'>
                     <h1>
-                        Habilidades ▲
+                        Habilidades <span><MdKeyboardArrowDown/></span>
                     </h1>
                     </div>
                     : 
                     <div onClick={handleSkill} className='expand_button closed_button'>
                     <h1>
-                        Habilidades ▼
+                        Habilidades <span><MdKeyboardArrowUp/></span>
                     </h1>
                 </div>
                 } 

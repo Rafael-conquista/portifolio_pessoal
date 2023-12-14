@@ -12,8 +12,9 @@
 
 .icon{
     color: white;
-    font-size: 5em;
+    font-size: 3em;
     max-width: fit-content;
+    margin-top: -2vh;
 }
 
 .skills_grid{
@@ -23,7 +24,7 @@
     gap: 20px;
     grid-template-columns: repeat(2, 2fr);
     transition: 1s;
-    transform: translate(0%, 2%);
+    transform: translateY(2%);
     padding-left: 10vw;
     padding-bottom: 15vh;
 }
@@ -55,12 +56,11 @@
 
 .skills_grid span{
     padding-left: 0.5vw;
-    padding-top: 1vh;
+    padding-top: 0.5vh;
 }
 
 .icon_card{
-    border-radius: 50px;
-    background: black;
+    border-radius: 20px;
     width: 150px;
     display: flex;
     flex-direction: column; /* Se desejar alinhar na vertical */
@@ -68,11 +68,12 @@
     align-items: center;
     cursor: pointer;
     transition: transform 0.2s ease-in-out;
+    border: 1px solid rgb(165, 65, 252);
 }
 
 .icon_card:hover{
     transform: scale(1.2);
-    background-color: #00000039
+    background-color: black
 }
 
 .expand_button{
@@ -80,7 +81,7 @@
     transition: transform 0.8s ease-in-out;
 }
 .expand_button:hover{
-    transform: scale(1.5);
+    transform: scale(1.1);
 }
 
 .closed_button{
