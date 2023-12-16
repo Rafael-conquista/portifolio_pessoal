@@ -1,0 +1,12 @@
+.destaques_body{
+    background-color: #13131F;
+    max-width: 90vw;
+    height: 50vh;
+    margin: 0 auto;
+    padding-bottom: 20vh;
+}
+
+.slider_image{
+    height: 40vh;
+    width: 100%;
+}

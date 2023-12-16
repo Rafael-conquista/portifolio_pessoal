@@ -69,3 +69,31 @@
 .offcanvas{
     background-color: black !important;
 }
+
+
+.button{
+    max-width: 20vw;
+    max-height: 30vh;
+}
+
+.botao {
+    width: 180px;
+    height: 60px;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid rgb(165, 65, 252);
+    border-radius: 20px;
+    outline: none;
+    transition: 0.5s ease-in-out;
+  }
+  .botao span {
+    color: white;
+    font-size: 18px;
+    font-weight: 100;
+  }
+
+  .botao:hover {
+    transition: 0.5s ease-in-out;
+    background: rgb(66, 11, 117);
+    transform: scale(1.1);
+  }

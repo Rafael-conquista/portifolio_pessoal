@@ -11,6 +11,23 @@ html{
   background-color: #13131F;
 }
 
+::-webkit-scrollbar {
+  width: 0.75vw;
+}
+
+/* Cor do fundo da scrollbar */
+::-webkit-scrollbar-track {
+  background: #09090965;
+}
+
+/* Cor do grip (alça) da scrollbar */
+::-webkit-scrollbar-thumb {
+  background: rgba(174, 98, 240, 0.554);
+  border-radius: 5px;
+  cursor: pointer; 
+  height: 2px; 
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

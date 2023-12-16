@@ -34,17 +34,6 @@ function Welcome() {
                     </Col>
                 </Row>
                 <Row>
-                    <Col className='button_space'/>
-                    <Col className='welcome_buttons col-10'>
-                        <button class="botao">
-                            <span>Download CV</span> 
-                        </button>
-                        <button className='botao'>
-                            <span>Entrar em contato</span> 
-                        </button>
-                    </Col>
-                </Row>
-                <Row>
                     <h1 className='about'>
                         Um pouco sobre mim:
                     </h1>

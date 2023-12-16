@@ -30,33 +30,6 @@
     margin-left: -2vw;
 }
 
-.button{
-    max-width: 20vw;
-    max-height: 30vh;
-}
-
-.botao {
-    width: 180px;
-    height: 60px;
-    cursor: pointer;
-    background: transparent;
-    border: 1px solid rgb(165, 65, 252);
-    border-radius: 20px;
-    outline: none;
-    transition: 0.5s ease-in-out;
-  }
-  .botao span {
-    color: white;
-    font-size: 18px;
-    font-weight: 100;
-  }
-
-  .botao:hover {
-    transition: 0.5s ease-in-out;
-    background: rgb(66, 11, 117);
-    transform: scale(1.1);
-  }
-
   .tema_imagem{
     border-radius: 180px;
     max-width:200px;
@@ -65,6 +38,10 @@
     height: auto;
     transition: 0.5s ease-in-out;
     margin-top: 5vh;
+  }
+
+  .tema_imagem:hover{
+    transform: scale(1.2);
   }
 
 @media screen and (max-width:1000px){
@@ -95,7 +72,7 @@ p{
 }
 
 .about{
-    padding-top: 10vh;
+    padding-top: 5vh;
     text-align: center;
 }
 

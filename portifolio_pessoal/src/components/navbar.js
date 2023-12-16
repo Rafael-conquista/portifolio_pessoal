@@ -1,5 +1,4 @@
 import React from 'react';
-import Button from 'react-bootstrap/Button';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import { useState } from 'react';
 import { TiThMenu } from "react-icons/ti";
@@ -22,6 +21,12 @@ function Navbar() {
                         <h2 className='menu_title'>Bem-vindo ao meu portifólio!</h2>
                         <TiThMenu className='burguer_menu' onClick={handleClose}/>
                     </Offcanvas.Header>
+                    <button class="botao">
+                        <span>Download CV</span> 
+                    </button>
+                    <button className='botao'>
+                        <span>Entrar em contato</span> 
+                    </button>
                 </Offcanvas>
             </nav>
             <div className='fine_line'></div>
