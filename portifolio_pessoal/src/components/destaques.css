@@ -1,12 +1,52 @@
 .destaques_body{
     background-color: #13131F;
-    max-width: 90vw;
+    width: 90vw;
     height: 50vh;
     margin: 0 auto;
-    padding-bottom: 20vh;
+    margin-bottom: 10vh;
+}
+
+.main{
+    background-color: #13131F;
+}
+
+@media screen and (min-width:500px){
+    .destaques_body{
+        width: 90vw;
+        height: 90vh;
+    }
+}
+
+@media screen and (min-width:600px){
+    .destaques_body{
+        width: 50vw;
+        height: 50vh;
+    }
 }
 
 .slider_image{
     height: 40vh;
     width: 100%;
+    cursor: pointer;
 }
+
+.destaques_body h1{
+    color: white;
+    padding-bottom: 2vh;
+}
+
+.destaques_body h3{
+    color: rgb(165, 65, 252);
+    text-align: center;
+}
+
+.carousel-control-prev{
+    background-color: rgba(165, 65, 252,0.3) !important;
+ }
+ .carousel-control-next{
+    background-color: rgba(165, 65, 252,0.3) !important;
+ }
+
+ .carousel-indicators [data-bs-target]{
+    background-color: rgb(165, 65, 252) !important;
+ }
