@@ -3,11 +3,12 @@
     width: 90vw;
     height: 50vh;
     margin: 0 auto;
-    margin-bottom: 10vh;
+    overflow: hidden;
 }
 
 .main{
     background-color: #13131F;
+    padding-bottom: 10vh;
 }
 
 @media screen and (min-width:500px){
@@ -33,6 +34,7 @@
 .destaques_body h1{
     color: white;
     padding-bottom: 2vh;
+    text-align: center;
 }
 
 .destaques_body h3{
@@ -41,10 +43,10 @@
 }
 
 .carousel-control-prev{
-    background-color: rgba(165, 65, 252,0.3) !important;
+    background-color: rgba(165, 65, 252,0.1) !important;
  }
  .carousel-control-next{
-    background-color: rgba(165, 65, 252,0.3) !important;
+    background-color: rgba(165, 65, 252,0.1) !important;
  }
 
  .carousel-indicators [data-bs-target]{

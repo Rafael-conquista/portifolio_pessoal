@@ -1,0 +1,91 @@
+.projects_body{
+  background-color: #13131F;
+}
+
+.projects_body h1, p{
+  color: white;
+  text-align: center;
+}
+
+.projects_grid{
+    display: grid;
+    padding-left: 20px;
+    padding-right: 20px;
+    gap: 10px;
+    grid-template-columns: repeat(1, 1fr);
+    transition: 1s;
+    transform: translateY(2%);
+    justify-items: center;
+    padding-bottom: 10vh;
+
+}
+
+
+@media screen and (min-width:500px){
+    .projects_grid{
+      flex-direction: column;
+      grid-template-columns: repeat(1, 1fr);
+      padding-left: 5vw;
+      gap: 50px;
+    }
+}
+
+@media screen and (min-width:600px){
+    .projects_grid{
+      flex-direction: column;
+      grid-template-columns: repeat(2, 2fr);
+      padding-left: 5vw;
+      gap: 50px;
+    }
+}
+  
+  @media screen and (min-width:805px){
+    .projects_grid{
+      flex-direction: column;
+      grid-template-columns: repeat(3, 2fr);
+      padding-left: 5vw;
+      gap: 50px;
+    }
+}
+
+.projects_card{
+    border-radius: 20px;
+    width: 25vw;
+    display: flex;
+    flex-direction: column; /* Se desejar alinhar na vertical */
+    justify-content: center; /* Alinha verticalmente */
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    border: 1px solid rgb(165, 65, 252);
+    overflow: hidden;
+    position: relative;
+}
+
+@media screen and (max-width:500px){
+  .projects_card{
+    width: 70vw;
+  }
+}
+
+.projects_card:hover{
+  transform: scale(1.1);
+  background-color: black;
+  z-index: 100;
+}
+
+.imagem{
+    height: 20vh;
+    width: 100%;
+    margin: 20px;
+    margin-top: 0;
+    height: auto; 
+    display: block; 
+}
+
+@media screen and (max-width:500px){
+  .imagem{
+    width: 70vw;
+    margin-top: 0;
+  }
+}
