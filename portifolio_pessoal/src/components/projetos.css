@@ -2,7 +2,7 @@
   background-color: #13131F;
 }
 
-.projects_body h1, p{
+.projects_body h1{
   color: white;
   text-align: center;
 }
@@ -51,6 +51,7 @@
 .projects_card{
     border-radius: 20px;
     width: 25vw;
+    height: 20vh;
     display: flex;
     flex-direction: column; /* Se desejar alinhar na vertical */
     justify-content: center; /* Alinha verticalmente */

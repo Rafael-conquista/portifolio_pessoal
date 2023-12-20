@@ -5,7 +5,7 @@ import perfil2 from '../img/cloth.png';
 
 function Destaques() {
     return(
-        <div className='main'>
+        <div id='destaques' className='main'>
             <div className='destaques_body'>
                 <h1>Destaques</h1>
                 <Carousel>

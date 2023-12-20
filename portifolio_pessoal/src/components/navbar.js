@@ -24,9 +24,6 @@ function Navbar() {
                     <button class="botao">
                         <span>Download CV</span> 
                     </button>
-                    <button className='botao'>
-                        <span>Entrar em contato</span> 
-                    </button>
                 </Offcanvas>
             </nav>
             <div className='fine_line'></div>
