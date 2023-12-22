@@ -15,7 +15,7 @@ function Footer(){
                         <li className="social_list"><a href="#" className="link"></a><SiGithub/></li>
                         <li className="social_list"><a href="#" className="link"></a><SiGmail/></li>
                     </ul>
-                    <ul className="menu">
+                    <ul className="menu" id="footer">
                         <li className="menu_item"><a href="#" className="menu_link">home</a></li>
                         <li className="menu_item"><a href="#about" className="menu_link">Sobre mim</a></li>
                         <li className="menu_item"><a href="#skills" className="menu_link">Habilidades</a></li>

@@ -27,7 +27,7 @@ function Projetos() {
                     </h1>
                     </div>
                     : 
-                    <div onClick={handleProjects} className='expand_button'>
+                    <div onClick={handleProjects} className='expand_button closed_button'>
                     <h1>
                         Projetos <span><MdKeyboardArrowUp/></span>
                     </h1>

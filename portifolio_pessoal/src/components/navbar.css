@@ -1,7 +1,5 @@
 .navbar_view{
     background-color: black;
-    padding-top: 5vh;
-    padding-bottom: 5vh;
     top: 0;
     z-index: 100;
     width: 100%;
@@ -69,8 +67,20 @@
 
 .offcanvas{
     background-color: black !important;
+    align-items: baseline !important;
+    padding-left: 1vw;
 }
 
+.menu_item_nav{
+    font-size: 1.2em;
+    color: #fff;
+    display: flex;
+    transition: 0.5s;
+    margin: 15px 0px;
+    text-decoration: none;
+    padding-top: 20px;
+    padding-left: 2vw;
+}
 
 .button{
     max-width: 20vw;
