@@ -7,8 +7,8 @@ import perfil from '../img/perfil.jpg';
 
 function Welcome() {
 
-    const escrita = {tempo:120, text:"Olá! Meu nome é", delay: 0}
-    const escrita2 = {tempo:120, text:" Rafael Conquista!", delay: 1000}
+    const escrita = { tempo: 120, text: "Olá! Meu nome é", delay: 0 }
+    const escrita2 = { tempo: 120, text: " Rafael Conquista!", delay: 1000 }
 
     return (
         <div className='welcome_container'>
@@ -16,7 +16,7 @@ function Welcome() {
                 <Row>
                     <Col>
                         <div className='imagem_div'>
-                            <img src={perfil} alt='vazio' className="tema_imagem" />   
+                            <img src={perfil} alt='vazio' className="tema_imagem" />
                         </div>
                     </Col>
                     <Col className='col-10'>
@@ -28,7 +28,7 @@ function Welcome() {
                                     props={escrita2}
                                 />
                             </span>
-                            
+
                         </h1>
                         <p id="about">Desenvolvedor Full Stack.</p>
                     </Col>

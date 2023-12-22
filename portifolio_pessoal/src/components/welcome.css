@@ -1,27 +1,27 @@
-.welcome_container{
+.welcome_container {
     display: flex;
     justify-content: space-around;
     background-color: #13131F;
-    padding:0 5vw;
+    padding: 0 5vw;
     padding-bottom: 5vh;
     height: max-content;
     color: white;
     padding-top: 5vh;
 }
 
-.container{
+.container {
     justify-content: center;
     padding-top: 3vh;
     padding-left: 5vw;
 }
 
-.name_title{
+.name_title {
     align-items: center;
     font-size: 50px;
     padding-top: 5vh;
 }
 
-.welcome_buttons{
+.welcome_buttons {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-content: start;
@@ -30,63 +30,64 @@
     margin-left: -2vw;
 }
 
-  .tema_imagem{
+.tema_imagem {
     border-radius: 180px;
-    max-width:200px;
-    max-height:150px;
+    max-width: 200px;
+    max-height: 150px;
     width: auto;
     height: auto;
     transition: 0.5s ease-in-out;
     margin-top: 5vh;
-  }
+}
 
-  .tema_imagem:hover{
+.tema_imagem:hover {
     transform: scale(1.2);
-  }
+}
 
-@media screen and (max-width:1000px){
+@media screen and (max-width:1000px) {
     .button_space {
-        display:none;
+        display: none;
     }
 }
 
-@media screen and (max-width:500px){
+@media screen and (max-width:500px) {
     .name_title {
         font-size: 30px;
     }
-    .tema_imagem{
+
+    .tema_imagem {
         border-radius: 180px;
-        max-width:150px;
-        max-height:100px;
+        max-width: 150px;
+        max-height: 100px;
         width: auto;
         height: auto;
-        }
+    }
 }
 
-span{
+span {
     color: rgb(165, 65, 252);
 }
 
-p{
+p {
     color: rgb(182, 182, 241);
 }
 
-.about{
+.about {
     padding-top: 5vh;
     text-align: center;
 }
 
-.text_about{
+.text_about {
     border-radius: 180px;
-    max-width:80vw;
-    max-height:80vh;
+    max-width: 80vw;
+    max-height: 80vh;
     width: auto;
     height: auto;
     color: #7d7d7d;
     padding-top: 3vh;
 }
 
-@media screen and (max-width:1400px){
+@media screen and (max-width:1400px) {
     .text_about {
         max-width: 50vw;
         width: 40vw;

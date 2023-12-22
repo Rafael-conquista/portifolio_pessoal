@@ -1,4 +1,4 @@
-.footer{
+.footer {
     position: relative;
     width: 100%;
     background: #13131f;
@@ -11,27 +11,35 @@
     padding-bottom: 5vh;
     background-color: black;
 }
-.footer ul{
+
+.footer ul {
     padding-left: 0;
 }
 
-.footer, .social_icons, .menu{
+.footer,
+.social_icons,
+.menu {
     position: relative;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-.footer, .social_icons, .social_list, .menu{
+.footer,
+.social_icons,
+.social_list,
+.menu {
     list-style: none;
 }
 
-.menu{
+.menu {
     padding-left: 2%;
     align-items: center;
 }
 
-.social_icons, .social_list, .link{
+.social_icons,
+.social_list,
+.link {
     font-size: 1.5em;
     color: #fff;
     display: inline-block;
@@ -39,15 +47,18 @@
     margin: 0 10px;
 }
 
-.social_list:hover, .link:hover, .menu_item{
+.social_list:hover,
+.link:hover,
+.menu_item {
     transform: translateY(-10px);
+    cursor: pointer;
 }
 
-.social_list:hover{
+.social_list:hover {
     color: rgb(255, 0, 251);
 }
 
-.menu_item{
+.menu_item {
     font-size: 1.2em;
     color: #fff;
     display: inline-block;
@@ -56,19 +67,22 @@
     text-decoration: none;
     padding-top: 20px;
     padding-left: 2vw;
+    cursor: pointer;
 }
 
-.menu_link{
+.menu_link {
     text-decoration: none;
     color: white;
     opacity: 0.75;
 }
-.menu_link:hover{
+
+.menu_link:hover {
     opacity: 1;
     color: rgb(255, 0, 251);
     transition: 0.5s;
 }
-.footer_text{
+
+.footer_text {
     text-align: center;
     font-size: 1.1em;
 }

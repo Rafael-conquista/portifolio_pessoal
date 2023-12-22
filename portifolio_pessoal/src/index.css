@@ -8,7 +8,8 @@ body {
   user-select: none;
   background-color: black;
 }
-html{
+
+html {
   background-color: black;
   overflow-x: hidden;
 }
@@ -26,8 +27,8 @@ html{
 ::-webkit-scrollbar-thumb {
   background: rgba(174, 98, 240, 0.554);
   border-radius: 5px;
-  cursor: pointer; 
-  height: 2px; 
+  cursor: pointer;
+  height: 2px;
 }
 
 code {

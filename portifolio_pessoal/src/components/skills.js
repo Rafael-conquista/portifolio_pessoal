@@ -26,65 +26,65 @@ import { useState } from 'react';
 
 
 const skills_list = {
-    'React.js': <FaReact/>, 'CSS3':<FaCss3Alt/>, 'HTML5':<FaHtml5/>, 'Bootstrap': <FaBootstrap/>, 'Node.js':<FaNode/>, 
-    'Typescript': <SiTypescript/>,'Jest and Vitest': <SiVitest/>, 'Mongoose': <SiMongoose/>, 'Sequelize':<SiSequelize/>,
-    'Python': <FaPython/>, 'SqlAlchemy':<SiSqlalchemy/>, 'FastApi': <SiFastapi/>, 'Flask':<FaFlask/>, 'Pytest':<SiPytest/>,
-    'Python Scrapping':<TbBrandPython/>,'PostgreSql': <BiLogoPostgresql/>, 'MySql': <SiMysql/>, 'MongoDB': <SiMongodb/>,
-    'Docker':<GrDocker/>, 'Kubernets': <SiKubernetes/>, 'github': <IoLogoGithub/>
+    'React.js': <FaReact />, 'CSS3': <FaCss3Alt />, 'HTML5': <FaHtml5 />, 'Bootstrap': <FaBootstrap />, 'Node.js': <FaNode />,
+    'Typescript': <SiTypescript />, 'Jest and Vitest': <SiVitest />, 'Mongoose': <SiMongoose />, 'Sequelize': <SiSequelize />,
+    'Python': <FaPython />, 'SqlAlchemy': <SiSqlalchemy />, 'FastApi': <SiFastapi />, 'Flask': <FaFlask />, 'Pytest': <SiPytest />,
+    'Python Scrapping': <TbBrandPython />, 'PostgreSql': <BiLogoPostgresql />, 'MySql': <SiMysql />, 'MongoDB': <SiMongodb />,
+    'Docker': <GrDocker />, 'Kubernets': <SiKubernetes />, 'github': <IoLogoGithub />
 }
 
 function Skills() {
     const [showSkill, setShowSkill] = useState(true)
     const handleSkill = () => {
-        if(!showSkill){
+        if (!showSkill) {
             setShowSkill(true)
-        }else{
+        } else {
             setShowSkill(false)
         }
     }
-    return(
+    return (
         <div>
             <div className='skills_body'>
 
                 {
                     showSkill ? <div onClick={handleSkill} className='expand_button'>
-                    <h1>
-                        Habilidades <span><MdKeyboardArrowDown/></span>
-                    </h1>
+                        <h1>
+                            Habilidades <span><MdKeyboardArrowDown /></span>
+                        </h1>
                     </div>
-                    : 
-                    <div onClick={handleSkill} className='expand_button closed_button'>
-                    <h1>
-                        Habilidades <span><MdKeyboardArrowUp/></span>
-                    </h1>
-                </div>
-                } 
+                        :
+                        <div onClick={handleSkill} className='expand_button closed_button'>
+                            <h1>
+                                Habilidades <span><MdKeyboardArrowUp /></span>
+                            </h1>
+                        </div>
+                }
 
-                
+
                 {
-                    showSkill ? 
-                    <div className='skills_grid'>  
-                    {
-                    Object.keys(skills_list).map((key,icon) => {
-                        return(
-                            <div className='icon_card'>
-                                <span>{key}</span>
-                                <div className='icon'>
-                                    {skills_list[key]}
-                                </div>
-                                
-                            </div> 
-                        )
-                    })
-                    }
-                    
-                 </div>
-                : <div></div>} 
-                
-                
+                    showSkill ?
+                        <div className='skills_grid'>
+                            {
+                                Object.keys(skills_list).map((key, icon) => {
+                                    return (
+                                        <div className='icon_card'>
+                                            <span>{key}</span>
+                                            <div className='icon'>
+                                                {skills_list[key]}
+                                            </div>
+
+                                        </div>
+                                    )
+                                })
+                            }
+
+                        </div>
+                        : <div></div>}
+
+
             </div>
         </div>
-        
+
     )
 }
 

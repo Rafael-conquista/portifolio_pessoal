@@ -1,4 +1,4 @@
-.destaques_body{
+.destaques_body {
     background-color: #13131F;
     width: 90vw;
     height: 50vh;
@@ -6,49 +6,50 @@
     overflow: hidden;
 }
 
-.main{
+.main {
     background-color: #13131F;
     padding-bottom: 10vh;
 }
 
-@media screen and (min-width:500px){
-    .destaques_body{
+@media screen and (min-width:500px) {
+    .destaques_body {
         width: 90vw;
         height: 90vh;
     }
 }
 
-@media screen and (min-width:600px){
-    .destaques_body{
+@media screen and (min-width:600px) {
+    .destaques_body {
         width: 50vw;
         height: 50vh;
     }
 }
 
-.slider_image{
+.slider_image {
     height: 40vh;
     width: 100%;
     cursor: pointer;
 }
 
-.destaques_body h1{
+.destaques_body h1 {
     color: white;
     padding-bottom: 2vh;
     text-align: center;
 }
 
-.destaques_body h3{
+.destaques_body h3 {
     color: rgb(165, 65, 252);
     text-align: center;
 }
 
-.carousel-control-prev{
-    background-color: rgba(165, 65, 252,0.1) !important;
- }
- .carousel-control-next{
-    background-color: rgba(165, 65, 252,0.1) !important;
- }
+.carousel-control-prev {
+    background-color: rgba(165, 65, 252, 0.1) !important;
+}
 
- .carousel-indicators [data-bs-target]{
+.carousel-control-next {
+    background-color: rgba(165, 65, 252, 0.1) !important;
+}
+
+.carousel-indicators [data-bs-target] {
     background-color: rgb(165, 65, 252) !important;
- }
+}
