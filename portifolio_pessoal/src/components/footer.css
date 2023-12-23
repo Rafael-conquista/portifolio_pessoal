@@ -8,8 +8,14 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding-bottom: 5vh;
+    padding-bottom: 10vh;
     background-color: black;
+}
+
+@media screen and (max-width:500px) {
+    .footer{
+        padding-bottom: 35vh;
+    }
 }
 
 .footer ul {
