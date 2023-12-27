@@ -1,17 +1,25 @@
 import './projetos.css'
 import perfil from '../img/perfil.jpg';
+import projectImage from '../img/no_image.jpg'
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { MdKeyboardArrowUp } from "react-icons/md";
 import { useState } from 'react';
 import { Modal } from 'react-bootstrap';
+import { Row, Col } from 'react-bootstrap';
+import { IoMdClose } from "react-icons/io";
 
 const projects = {
-    'Projeto1': 'imagem', 'Projeto2': 'imagem', 'Projeto3': 'imagem', 'Projeto4': 'imagem', 'Projeto5': 'imagem', 'Projeto6': 'imagem', 'Projeto7': 'imagem',
+    'Projeto1': projectImage, 'Projeto2': projectImage, 'Projeto3': projectImage, 'Projeto4': projectImage, 'Projeto5': projectImage, 'Projeto6': projectImage, 'Projeto7': projectImage,
+}
+const projects_desc = {
+    'Projeto1': 'Descição completa do projeto, onde será adaptado de forma dinâmica', 'Projeto2': 'batata completa do projeto, onde será adaptado de forma dinâmica', 'Projeto3': 'Descição completa do projeto, onde será adaptado de forma dinâmica', 'Projeto4': 'Descição completa do projeto, onde será adaptado de forma dinâmica', 'Projeto5': 'Descição completa do projeto, onde será adaptado de forma dinâmica', 'Projeto6': 'Descição completa do projeto, onde será adaptado de forma dinâmica', 'Projeto7': 'Descição completa do projeto, onde será adaptado de forma dinâmica',
 }
 
 function Projetos() {
     const [showProjects, setShowProjects] = useState(true)
     const [showModal, setShowModal] = useState(false);
+    const [project, setProject] = useState('')
+    const [image, setImage] = useState(projectImage)
     const handleProjects = () => {
         if (!showProjects) {
             setShowProjects(true)
@@ -20,7 +28,11 @@ function Projetos() {
         }
     }
 
-    const handleModal = () => {
+    const handleModal = (event) => {
+        const id = event.target.id
+        setProject(id)
+        setImage(projects[id])
+        console.log(image)
         setShowModal(true);
     };
 
@@ -53,7 +65,7 @@ function Projetos() {
                                 return (
                                     <div className='projects_card' onClick={handleModal}>
                                         <div className='imagem'>
-                                            <img src={perfil} alt='vazio' className='slider_image' />
+                                            <img src={projects[key]} alt='vazio' id={key} className='slider_image' />
                                         </div>
                                         <p>{key}</p>
                                     </div>
@@ -63,18 +75,28 @@ function Projetos() {
 
                     </div>
                     : <div></div>}
-            <Modal show={showModal} onHide={handleClose}>
-                <Modal.Header closeButton>
-                    <Modal.Title>Meu Modal</Modal.Title>
+            <Modal show={showModal} onHide={handleClose} centered size="xl">
+                <Modal.Header>
+                    <Modal.Title><h1 className='modal_title'>{project}</h1></Modal.Title>
+                    <IoMdClose onClick={handleClose} className='close_button'/>
                 </Modal.Header>
                 <Modal.Body>
-                    Aqui vai o conteúdo do seu modal.
+                    <Row>
+                        <Col>
+                            <p>{projects_desc[project]}</p>
+                        </Col>
+                        <Col>
+                            <img src={image} alt='vazio' className='slider_image' />
+                        </Col>
+                    </Row>
                 </Modal.Body>
                 <Modal.Footer>
                     <button variant="secondary" onClick={handleClose}>
+                        Acessar
+                    </button>
+                    <button variant="secondary" onClick={handleClose}>
                         Fechar
                     </button>
-                    {/* Adicione aqui outros botões ou ações no footer, se necessário */}
                 </Modal.Footer>
             </Modal>
 

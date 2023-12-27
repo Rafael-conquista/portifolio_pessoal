@@ -92,3 +92,30 @@
     margin-top: 0;
   }
 }
+
+.modal-content {
+  background-color: #13131F !important;
+}
+
+.modal-header{
+  border-bottom: var(--bs-modal-header-border-width) solid #e800ff !important;
+}
+
+.modal-footer{
+  border-top: var(--bs-modal-header-border-width) solid #e800ff !important;
+}
+
+.modal_title{
+  color: white  ;
+}
+
+.close_button{
+  color: white;
+  cursor: pointer;
+  font-size: 3em;
+  transition: 0.5s;
+}
+
+.close_button:hover{
+  color: #ff0000;
+}
