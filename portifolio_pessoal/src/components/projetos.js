@@ -32,7 +32,6 @@ function Projetos() {
         const id = event.target.id
         setProject(id)
         setImage(projects[id])
-        console.log(image)
         setShowModal(true);
     };
 
@@ -90,13 +89,13 @@ function Projetos() {
                         </Col>
                     </Row>
                 </Modal.Body>
-                <Modal.Footer>
-                    <button variant="secondary" onClick={handleClose}>
-                        Acessar
-                    </button>
-                    <button variant="secondary" onClick={handleClose}>
-                        Fechar
-                    </button>
+                <Modal.Footer className='teste'>
+                    <div className='botao' onClick={handleClose}>
+                        <span>Acessar</span>
+                    </div>
+                    <div className='botao' onClick={handleClose}>
+                        <span>Fechar</span>
+                    </div>
                 </Modal.Footer>
             </Modal>
 
