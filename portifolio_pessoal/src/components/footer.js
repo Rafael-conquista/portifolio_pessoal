@@ -21,7 +21,6 @@ function Footer() {
                         <li className="menu_item"><a href="#" className="menu_link">Início</a></li>
                         <li className="menu_item"><a href="#about" className="menu_link">Sobre mim</a></li>
                         <li className="menu_item"><a href="#skills" className="menu_link">Habilidades</a></li>
-                        <li className="menu_item"><a href="#destaques" className="menu_link">Destaques</a></li>
                         <li className="menu_item"><a href="#projetos" className="menu_link">Projetos</a></li>
                     </ul>
                 </footer>

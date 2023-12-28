@@ -83,7 +83,18 @@ p {
     background-repeat: no-repeat;
     background-size: 100% 3px;
     background-position: left bottom;
+    animation: load 4s ease-in-out;
 }
+
+@keyframes load{
+    from{
+      opacity: 0;
+    }
+  
+    to{
+      opacity: 1;
+    }
+  }
 
 .text_about {
     border-radius: 180px;
@@ -101,7 +112,7 @@ p {
     background-repeat: no-repeat;
     background-size: 100% 3px;
     background-position: left bottom;
-    
+    animation: load 4s ease-in-out;
 }
 
 @media screen and (max-width:1400px) {

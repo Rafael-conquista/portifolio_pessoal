@@ -2,6 +2,18 @@
   background-color: #13131F;
 }
 
+@keyframes appear{
+  from{
+    opacity: -2;
+    translate: -5vw -20vh;
+  }
+
+  to{
+    opacity: 2;
+    translate: 0 0;
+  }
+}
+
 .projects_body h1 {
   color: white;
   text-align: center;
@@ -14,6 +26,9 @@
   background-repeat: no-repeat;
   background-size: 100% 3px;
   background-position: left bottom;
+  animation: appear 1ms ease-in-out;
+  animation-timeline: scroll();
+  animation-range: cover 0% cover 80%;
 }
 
 .projects_grid {
@@ -26,6 +41,9 @@
   justify-items: center;
   padding-top: 10vh;
   padding-bottom: 20vh;
+  animation: appear 1ms ease-in-out;
+  animation-timeline: view();
+  animation-range: cover 0% cover 40%;
 
 }
 

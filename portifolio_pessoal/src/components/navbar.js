@@ -37,7 +37,6 @@ function Navbar() {
                         <li className="menu_item_nav" onClick={handleClose}><a href="#" className="menu_link">Início</a></li>
                         <li className="menu_item_nav" onClick={handleClose}><a href="#about" className="menu_link">Sobre mim</a></li>
                         <li className="menu_item_nav" onClick={handleClose}><a href="#skills" className="menu_link">Habilidades</a></li>
-                        <li className="menu_item_nav" onClick={handleClose}><a href="#destaques" className="menu_link">Destaques</a></li>
                         <li className="menu_item_nav" onClick={handleClose}><a href="#projetos" className="menu_link">Projetos</a></li>
                         <li className="menu_item_nav" onClick={handleClose}><a href="#footer" className="menu_link">Entrar em contato</a></li>
                         <li className="menu_item_nav" onClick={iniciarDownload} ><a className="menu_link">Baixar meu currículo <IoMdDownload /></a></li>

@@ -2,6 +2,9 @@
   background-color: #13131F;
   overflow-x: hidden;
   overflow-y: hidden;
+  animation: animated 1ms ease-in-out;
+  animation-timeline: scroll();
+  animation-range: cover 0% cover 30%;
 }
 
 .skills_body h1 {
@@ -31,11 +34,21 @@
   padding-right: 20px;
   gap: 20px;
   grid-template-columns: repeat(2, 2fr);
-  transition: 1s;
-  transform: translateY(2%);
   padding-left: 10vw;
   padding-bottom: 15vh;
   padding-top: 10vh;
+}
+
+@keyframes animated{
+  from{
+    opacity: 0;
+    translate: -10vw -15vh;
+  }
+
+  to{
+    opacity: 1;
+    translate: 0 0;
+  }
 }
 
 
@@ -98,4 +111,7 @@
 
 .closed_button {
   padding-bottom: 5vh;
+}
+.back{
+  background-color: #13131F;
 }

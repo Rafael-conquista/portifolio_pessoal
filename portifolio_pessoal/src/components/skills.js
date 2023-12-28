@@ -43,7 +43,7 @@ function Skills() {
         }
     }
     return (
-        <div>
+        <div className='back'>
             <div className='skills_body'>
 
                 {
