@@ -11,7 +11,6 @@ function App() {
       <Navbar className="teste" />
       <Welcome />
       <Skills />
-      <Destaques />
       <Projetos />
       <Footer />
     </div>
