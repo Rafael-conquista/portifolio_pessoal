@@ -5,6 +5,14 @@
 .projects_body h1 {
   color: white;
   text-align: center;
+  padding-top: 5vh;
+  width: fit-content;
+  margin: 0 auto;
+  text-decoration: none;
+  background-image: linear-gradient(90deg, rgb(162, 0, 255), #13131F, #13131F);
+  background-repeat: no-repeat;
+  background-size: 100% 3px;
+  background-position: left bottom;
 }
 
 .projects_grid {
@@ -13,11 +21,15 @@
   padding-right: 20px;
   gap: 10px;
   grid-template-columns: repeat(1, 1fr);
-  transition: 1s;
   transform: translateY(2%);
   justify-items: center;
-  padding-bottom: 10vh;
+  padding-top: 10vh;
+  padding-bottom: 20vh;
 
+}
+
+.projects_grid:hover > :not(:hover){
+  opacity: .45;
 }
 
 
@@ -49,9 +61,9 @@
 }
 
 .projects_card {
-  border-radius: 20px;
+  border-radius: 10px;
   width: 25vw;
-  height: 20vh;
+  height: 30vh;
   display: flex;
   flex-direction: column;
   /* Se desejar alinhar na vertical */
@@ -59,7 +71,7 @@
   /* Alinha verticalmente */
   align-items: center;
   cursor: pointer;
-  transition: transform 0.2s ease-in-out;
+  transition: transform 1s ease-in-out;
   border: 1px solid rgb(165, 65, 252);
   overflow: hidden;
   position: relative;
@@ -74,7 +86,13 @@
 .projects_card:hover {
   transform: scale(1.1);
   background-color: black;
+  opacity: 1;
   z-index: 100;
+}
+
+.projects_card:hover .imagem{
+  height: 20vh;
+  transition: .9s ease-in-out;
 }
 
 .imagem {
@@ -82,7 +100,7 @@
   width: 100%;
   margin: 20px;
   margin-top: 0;
-  height: auto;
+  height: 100vh;
   display: block;
 }
 
@@ -122,13 +140,12 @@
 
 .botao {
   width: 180px;
-  height: 60px;
+  height: 30px;
   cursor: pointer;
   background: transparent;
   border: 1px solid rgb(165, 65, 252);
   border-radius: 20px;
   outline: none;
-  padding-top: 1.5vh;
   transition: 0.5s ease-in-out;
   text-align: center;
 }
@@ -143,4 +160,32 @@
   transition: 0.5s ease-in-out;
   background: rgb(66, 11, 117);
   transform: scale(1.05);
+}
+
+.projeto_imagem {
+  border-radius: 10px;
+  max-width: 800px;
+  max-height: 800px;
+  width: auto;
+  height: auto;
+  transition: 0.5s ease-in-out;
+  margin-top: 5vh;
+  margin: 0 auto;
+}
+@media screen and (max-width:500px) {
+  .projeto_imagem{
+    max-width: 300px;
+    max-height: 300px;
+  }
+  .modal_position p{
+    width: 90vw;
+  }
+  .botao{
+    width: 100px;
+  }
+}
+
+.modal_position{
+  display: flex;
+  justify-content: space-between;
 }

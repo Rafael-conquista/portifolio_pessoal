@@ -63,10 +63,10 @@ function Projetos() {
                             Object.keys(projects).map((key, icon) => {
                                 return (
                                     <div className='projects_card' onClick={handleModal}>
+                                        <p>Clique aqui para ver o {key}</p>
                                         <div className='imagem'>
                                             <img src={projects[key]} alt='vazio' id={key} className='slider_image' />
                                         </div>
-                                        <p>{key}</p>
                                     </div>
                                 )
                             })
@@ -80,16 +80,16 @@ function Projetos() {
                     <IoMdClose onClick={handleClose} className='close_button'/>
                 </Modal.Header>
                 <Modal.Body>
-                    <Row>
-                        <Col>
+                    <Row className='modal_position'>
+                        <Col className='col-6'>
                             <p>{projects_desc[project]}</p>
                         </Col>
-                        <Col>
-                            <img src={image} alt='vazio' className='slider_image' />
+                        <Col className='d-flex'>
+                            <img src={image} alt='vazio' className='projeto_imagem' />
                         </Col>
                     </Row>
                 </Modal.Body>
-                <Modal.Footer className='teste'>
+                <Modal.Footer className='modal_footer'>
                     <div className='botao' onClick={handleClose}>
                         <span>Acessar</span>
                     </div>
