@@ -13,8 +13,8 @@ const projects = {
     'pokedex': pokeLogo, 'MYARCH': myarchLogo,
 }
 const projects_desc = {
-    'pokedex': {'desc': 'Descubra mais sobre os Pokémon e desafie seus conhecimentos com o PokéChallenge! Este projeto Pokedex foi desenvolvido com o objetivo de aplicar conhecimentos no framework React.js. Além disso, foi essencial para compreender o funcionamento de componentes, hooks e requisições, com ênfase no consumo de APIs.', 'link': 'https://streamable.com/e/iectjp?autoplay=1&muted=1&nocontrols=1'},
-    'MYARCH': {'desc': 'Este portfólio foi concebido como uma compilação dos projetos do cliente, proporcionando a apresentação organizada do currículo e uma listagem clara de suas realizações. O objetivo é destacar suas habilidades por meio de uma exibição ordenada de projetos concluídos. No desenvolvimento deste portfólio, foram empregadas tecnologias como React, HTML e CSS para garantir uma apresentação sólida e profissional.', 'link': 'https://streamable.com/e/0yp9re?autoplay=1&muted=1&nocontrols=1'},
+    'pokedex': {'desc': 'Descubra mais sobre os Pokémon e desafie seus conhecimentos com o PokéChallenge! Este projeto Pokedex foi desenvolvido com o objetivo de aplicar conhecimentos no framework React.js. Além disso, foi essencial para compreender o funcionamento de componentes, hooks e requisições, com ênfase no consumo de APIs.', 'link': 'https://streamable.com/e/iectjp?autoplay=1&muted=1&nocontrols=1', 'deploy': 'https://pokedex-ivory-eta.vercel.app/'},
+    'MYARCH': {'desc': 'Este portfólio foi concebido como uma compilação dos projetos do cliente, proporcionando a apresentação organizada do currículo e uma listagem clara de suas realizações. O objetivo é destacar suas habilidades por meio de uma exibição ordenada de projetos concluídos. No desenvolvimento deste portfólio, foram empregadas tecnologias como React, HTML e CSS para garantir uma apresentação sólida e profissional.', 'link': 'https://streamable.com/e/0yp9re?autoplay=1&muted=1&nocontrols=1', 'deploy': 'https://my-arch-portifolio.vercel.app/'},
 }
 
 function Projetos() {
@@ -40,6 +40,9 @@ function Projetos() {
         setShowModal(false);
     };
 
+    const redirectToProject = () => {
+        console.log(projects_desc[project]?.deploy)
+    }
 
     return (
         <div id='projetos' className='projects_body'>
@@ -93,8 +96,8 @@ function Projetos() {
                 </Modal.Body>
                 <Modal.Footer className='modal_footer'>
                     <div className='buttons'>
-                        <div className='botao' onClick={handleClose}>
-                            <span>Acessar</span>
+                        <div className='botao'>
+                            <a href={projects_desc[project]?.deploy} className="" target="blank"><span>Acessar</span></a>
                         </div>
                         <div className='botao' onClick={handleClose}>
                             <span>Fechar</span>
