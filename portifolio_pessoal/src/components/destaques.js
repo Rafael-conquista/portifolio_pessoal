@@ -1,7 +1,6 @@
 import './destaques.css'
 import Carousel from 'react-bootstrap/Carousel';
 import perfil from '../img/perfil.jpg';
-import perfil2 from '../img/cloth.png';
 
 function Destaques() {
     return (
@@ -15,7 +14,7 @@ function Destaques() {
                     </Carousel.Item>
                     <Carousel.Item interval={2500}>
                         <h3>Second slide label</h3>
-                        <img src={perfil2} alt='vazio' className='slider_image' />
+                        <img src={perfil} alt='vazio' className='slider_image' />
                     </Carousel.Item>
                     <Carousel.Item interval={2500}>
                         <h3>Third slide label</h3>

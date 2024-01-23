@@ -1,6 +1,7 @@
 import './projetos.css'
-import perfil from '../img/perfil.jpg';
 import projectImage from '../img/no_image.jpg'
+import pokeLogo from '../img/pokedex/logo.png'
+import myarchLogo from '../img/myarch/logo.jpeg'
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { MdKeyboardArrowUp } from "react-icons/md";
 import { useState } from 'react';
@@ -9,11 +10,11 @@ import { Row, Col } from 'react-bootstrap';
 import { IoMdClose } from "react-icons/io";
 
 const projects = {
-    'Projeto1': projectImage, 'Projeto2': projectImage, 'Projeto3': projectImage, 'Projeto4': projectImage, 'Projeto5': projectImage, 'Projeto6': projectImage, 'Projeto7': projectImage,
+    'pokedex': pokeLogo, 'MYARCH': myarchLogo,
 }
 const projects_desc = {
-    'Projeto1': "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sit amet consequat magna, quis consequat mi. Nulla condimentum dictum nisi in vestibulum. Donec lacinia blandit vulputate. Donec nec porttitor metus. Aenean vel consectetur ante. Sed malesuada lacus sed mattis vestibulum. Sed neque lacus, pretium id dictum id, tristique id risus. Mauris id ultricies velit, id imperdiet nisi. Nulla facilisi. Quisque dictum nibh sed dignissim suscipit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sit amet consequat magna, quis consequat mi. Nulla condimentum dictum nisi in vestibulum. Donec lacinia blandit vulputate. Donec nec porttitor metus. Aenean vel consectetur ante. Sed malesuada lacus sed mattis vestibulum. Sed neque lacus, pretium id dictum id, tristique id risus. Mauris id ultricies velit, id imperdiet nisi. Nulla facilisi. Quisque dictum nibh sed dignissim suscipit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sit amet consequat magna, quis consequat mi. Nulla condimentum dictum nisi in vestibulum. Donec lacinia blandit vulputate. Donec nec porttitor metus. Aenean vel consectetur ante. Sed malesuada lacus sed mattis vestibulum. Sed neque lacus, pretium id dictum id, tristique id risus. Mauris id ultricies velit, id imperdiet nisi. Nulla facilisi. Quisque dictum nibh sed dignissim suscipit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sit amet consequat magna, quis consequat mi. Nulla condimentum dictum nisi in vestibulum. Donec lacinia blandit vulputate. Donec nec porttitor metus. Aenean vel consectetur ante. Sed malesuada lacus sed mattis vestibulum. Sed neque lacus, pretium id dictum id, tristique id risus. Mauris id ultricies velit, id imperdiet nisi. Nulla facilisi. Quisque dictum nibh sed dignissim suscipit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sit amet consequat magna, quis consequat mi. Nulla condimentum dictum nisi in vestibulum. Donec lacinia blandit vulputate. Donec nec porttitor metus. Aenean vel consectetur ante. Sed malesuada lacus sed mattis vestibulum. Sed neque lacus, pretium id dictum id, tristique id risus. Mauris id ultricies velit, id imperdiet nisi. Nulla facilisi. Quisque dictum nibh sed dignissim suscipit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sit amet consequat magna, quis consequat mi. Nulla condimentum dictum nisi in vestibulum. Donec lacinia blandit vulputate. Donec nec porttitor metus. Aenean vel consectetur ante. Sed malesuada lacus sed mattis vestibulum. Sed neque lacus, pretium id dictum id, tristique id risus. Mauris id ultricies velit, id imperdiet nisi. Nulla facilisi. Quisque dictum nibh sed dignissim suscipit.",
-    'Projeto2': 'batata completa do projeto, onde será adaptado de forma dinâmica', 'Projeto3': 'Descição completa do projeto, onde será adaptado de forma dinâmica', 'Projeto4': 'Descição completa do projeto, onde será adaptado de forma dinâmica', 'Projeto5': 'Descição completa do projeto, onde será adaptado de forma dinâmica', 'Projeto6': 'Descição completa do projeto, onde será adaptado de forma dinâmica', 'Projeto7': 'Descição completa do projeto, onde será adaptado de forma dinâmica',
+    'pokedex': {'desc': 'Descubra mais sobre os Pokémon e desafie seus conhecimentos com o PokéChallenge! Este projeto Pokedex foi desenvolvido com o objetivo de aplicar conhecimentos no framework React.js. Além disso, foi essencial para compreender o funcionamento de componentes, hooks e requisições, com ênfase no consumo de APIs.', 'link': 'https://streamable.com/e/iectjp?autoplay=1&muted=1&nocontrols=1'},
+    'MYARCH': {'desc': 'Este portfólio foi concebido como uma compilação dos projetos do cliente, proporcionando a apresentação organizada do currículo e uma listagem clara de suas realizações. O objetivo é destacar suas habilidades por meio de uma exibição ordenada de projetos concluídos. No desenvolvimento deste portfólio, foram empregadas tecnologias como React, HTML e CSS para garantir uma apresentação sólida e profissional.', 'link': 'https://streamable.com/e/0yp9re?autoplay=1&muted=1&nocontrols=1'},
 }
 
 function Projetos() {
@@ -28,7 +29,6 @@ function Projetos() {
             setShowProjects(false)
         }
     }
-
     const handleModal = (event) => {
         const id = event.target.id
         setProject(id)
@@ -64,7 +64,7 @@ function Projetos() {
                             Object.keys(projects).map((key, icon) => {
                                 return (
                                     <div className='projects_card' onClick={handleModal}>
-                                        <p>Clique aqui para ver o {key}</p>
+                                        <p>{key.toUpperCase()}</p>
                                         <div className='imagem'>
                                             <img src={projects[key]} alt='vazio' id={key} className='slider_image' />
                                         </div>
@@ -83,10 +83,11 @@ function Projetos() {
                 <Modal.Body>
                     <Row className='modal_position'>
                         <Col className='d-flex'>
-                            <img src={image} alt='vazio' className='projeto_imagem' />
+                            <iframe allow="fullscreen;autoplay" height="100%" src={projects_desc[project]?.link} width="100%" className='projeto_imagem'></iframe>
                         </Col>
-                        <Col className='col-6'>
-                            <p>{projects_desc[project]}</p>
+                        <Col className='text_desc'>
+                            <p>{projects_desc[project]?.desc}</p>
+                            
                         </Col>
                     </Row>
                 </Modal.Body>

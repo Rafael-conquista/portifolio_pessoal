@@ -94,6 +94,7 @@
   border: 1px solid rgb(165, 65, 252);
   overflow: hidden;
   position: relative;
+  transition: .9s;
 }
 
 @media screen and (max-width:500px) {
@@ -107,6 +108,7 @@
   background-color: black;
   opacity: 1;
   z-index: 100;
+  transition: .9s ease-in-out;
 }
 
 .projects_card:hover .imagem{
@@ -121,6 +123,7 @@
   margin-top: 0;
   height: 100vh;
   display: block;
+  transition: .9s ease-in-out;
 }
 
 @media screen and (max-width:500px) {
@@ -189,10 +192,8 @@
 
 .projeto_imagem {
   border-radius: 10px;
-  max-width: 600px;
-  max-height: 600px;
-  width: auto;
-  height: auto;
+  width: 1000px;
+  height: 500px;
   transition: 0.5s ease-in-out;
   margin-top: 5vh;
   margin: 0 auto;
@@ -201,7 +202,7 @@
 @media screen and (max-width:500px) {
   .projeto_imagem{
     max-width: 300px;
-    max-height: 300px;
+    max-height: 400px;
   }
   .modal_position p{
     width: 90vw;
@@ -212,9 +213,26 @@
   .buttons{
     padding-bottom: 10vh;
   }
+  .text_desc{
+    align-items: flex-start;
+  }
+}
+
+@media screen and (max-width:992px) {
+  .projeto_imagem{
+    max-width: 600px;
+    max-height: 400px;
+  }
 }
 
 .modal_position{
   display: flex;
   justify-content: space-between;
+}
+
+.text_desc{
+  text-align: justify;
+  margin: 0 auto;
+  width: 90vw;
+  font-size: 20px;
 }
