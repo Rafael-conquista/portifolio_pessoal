@@ -97,12 +97,16 @@ function Projetos() {
                 </Modal.Body>
                 <Modal.Footer className='modal_footer'>
                     <div className='buttons'>
+                    <a href={projects_desc[project]?.git} className="" target="blank">
                         <div className='botao'>
-                            <a href={projects_desc[project]?.git} className="" target="blank"><span><SiGithub /></span></a>
+                            <span><SiGithub /></span>
                         </div>
+                    </a>
+                    <a href={projects_desc[project]?.deploy} className="" target="blank">
                         <div className='botao'>
-                            <a href={projects_desc[project]?.deploy} className="" target="blank"><span>Acessar</span></a>
+                            <span>Acessar</span>
                         </div>
+                    </a>
                         <div className='botao' onClick={handleClose}>
                             <span>Fechar</span>
                         </div>

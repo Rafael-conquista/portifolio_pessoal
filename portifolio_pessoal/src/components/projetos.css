@@ -244,3 +244,7 @@
   padding-right: 25px;
   padding-left: 10px;
 }
+
+.buttons a{
+  text-decoration: none;
+}
